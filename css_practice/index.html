@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+        .flex-box{
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 5px 8px 5px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        li{
+            list-style-type: none;
+        }
+        ul{
+            display: flex;
+            grid-gap: 1rem;
+        }
+        a, a:hover, a:focus, a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            background-color: hsl(0, 0%, 100%);
+        }
+        .text-p{
+            padding-top: 30px;
+            width: 400px;
+        }
+        .container{
+            width: 1440px;
+            margin:0 auto;
+            position: relative;
+        }
+        .detail-text{
+            margin-top: 20px;
+        }
+        button.pick{
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(55, 208, 255);
+            color:#fff;
+        }
+        button{
+            width: 90px;
+            height: 25px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(70, 70, 70);
+            color:#fff;
+        }
+        div.list-product{
+            height: 500px;
+            justify-content: center;
+            background-color: blanchedalmond;
+        }
+        body, html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav class="flex-box">
+        <ul>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#Resources">Resources</a></li>
+            <li><a href="">Inspiration</a></li>
+            <li><a href="">Pricing</a></li>
+        </ul>
+        <h3>malichimp</h3>
+        <div>
+            <button>Login</button>
+            <button>Sign up Free</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <div class="text-p">
+                <h1 style="font-size: 40px;">Marketing smarts for big ideas</h1>
+                <p class="detail-text">Mailchimp helps small businessess do big things, with right tools and guidance every step of the way.</p>
+                <br>
+                <button class="pick">Pick a plan</button>
+            </div>
+            <img src="images/product.png" alt="">
+        </div>
+        <br>
+        <br>
+        <div class="content">
+            <div class="text-p">
+                <h1 id="Resources">Resources</h1>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At voluptas ducimus nesciunt rem vel voluptate ut repellat magni placeat quo ullam facilis explicabo provident et, animi esse labore est possimus nisi neque, mollitia non. Aut facilis tempore expedita quae</p>
+            </div>
+            <img src="images/oppo.webp" alt="" width="25%">
+        </div>
+        <br>
+        <div class="content">
+            <div class="text-p">
+                <br>
+                <h1 id="Products">Products</h1>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At voluptas ducimus nesciunt rem vel voluptate ut repellat magni placeat quo ullam facilis explicabo provident et, animi esse labore est possimus nisi neque, mollitia non. Aut facilis tempore expedita quae</p>
+            </div>
+            <img src="images/oppo.webp" alt="" width="25%">
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
